@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Styles/card.css">
     <title>PORTAL DE NOTICIAS GALACTICA</title>
+    <script src="src/components/cardNews.js" defer></script>
+    <script src="src/components/TitleDynamic.js" defer></script>
 </head>
+<!--Forma normal de criar elementos html-->
     <div class="container">
         <div class="card">
 
             <div class="card_left">
                 <span>By Rictor Skywalker</span>
-                <h1>Darth Vader contrata devs</h1>
-                <p>Darth Vader procura desenvolvedores que sabem trabalhar com componentes</p>
+                <a href="#">Darth Vader contrata devs</a>
+                <p>Darth Vader procura desenvolvedores que saibam trabalhar com componentes</p>
             </div>
 
             <div class="card_right">
@@ -20,5 +23,20 @@
             </div>
         </div>
     </div>
+
+    <card-news 
+    autor="Victor"
+    titulo="Darth Vader contrata"
+    link-url="#"
+    conteudo="Darth Vader procura desenvolvedores que saibam trabalhar com components."
+    image-url="img/Coffee-Vader-Cafe-do-lado-negro-da-forca.jpg"
+    ></card-news>
+
+    <card-news
+    autor="Richard"
+    titulo="Yoda convence republica a utilizar components"
+    link-url="www.google.com/yoda"
+    conteudo="Yoda se pronuncia sobre o uso de components e sua utilidade na republica"
+    ></card-news>
 </body>
 </html>
